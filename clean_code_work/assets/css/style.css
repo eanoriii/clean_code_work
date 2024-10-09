@@ -4,28 +4,95 @@
     box-sizing: border-box;
 }
 
+/* https://paletadecores.com/paleta/666666/abdb25/999999/ffffff/cccccc/ */
+
 body{
-    background-image: linear-gradient(white,gray);
+    background-image: linear-gradient(white,#e1e0e0);
     background-repeat: repeat-x;
     font-family:'Courier New', Courier, monospace;
+    background-color: #cccccc;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 header{
     background-color: white;
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+}
+
+main{
+    margin: 3em;
+    width: 80em;
+    padding: 15px;
+    background-color: #abdb25;
+    border-radius: 10px;
 }
 
 section{
     display: flex;
     flex-direction: row;
-    margin-left: ;
-    margin-right: ;
-
 }
 
 button{
-    background-color: #666;
+    background-color: #abdb25;
     border: none;
+    padding: 10px;
     font-size: x-large;
     font-family: Courier;
-    color: white;
+    color: #ffffff;
+    margin-right: 0.5em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px ;
+}
+
+button:hover{
+    background-color: white;
+    color: #666666;
+
+}
+
+.tab-btn.active {
+    background-color: #ffffff;
+    color: #666666;
+}
+
+.content{
+    display: none;
+}
+
+.content.show{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding: 1em;
+}
+
+h1{
+    color: #666666;
+    margin-left: 10px;
+}
+
+h2{
+    font-size: xx-large;
+}
+
+p{
+    margin-bottom: 15px;
+    margin-top: 15px; 
+}
+
+li{
+    margin-bottom: 15px;
+    margin-top: 15px; 
+}
+
+footer{
+    margin: 2em;
 }
